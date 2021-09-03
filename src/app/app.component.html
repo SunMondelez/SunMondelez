@@ -1,0 +1,85 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!-- //////////// --> 
+
+<div class="d-flex justify-content-center">
+  <div  class="login">
+
+    <h2 class="title">
+      <h3 class="welcome">Welcome to  Weather App</h3>
+     
+      <h5 class="hint">Enter your ZipCode or Sate Name to check the Temparature</h5>
+    </h2>
+
+    <div class="login-group">
+      <input required type="text" placeholder="Search a Zipcode" [(ngModel)]="Zipcode" />
+    </div>
+    <br>
+    <div>
+      <button type="submit" class="btn btn-primary" (click)=" getdata()">
+        Search
+      </button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="d-flex align-items-center "> <h2 for="">Temaparature : </h2>
+      <div>
+        <h2> {{ this.Temp}}%C </h2>
+      </div></div>
+
+      <div class="d-flex align-items-center"> <h2 for="">Country :</h2>
+        <div>
+          <h2> {{ this.country}}</h2>
+        </div></div>
+
+        <div class="d-flex align-items-center"> <h2 for="">CityName :</h2>
+          <div>
+            <h2> {{ this.CityName}} </h2>
+          </div></div>  
+
+          <div class="d-flex align-items-center"> <h2 for="">Max Temp :</h2>
+            <div>
+              <h2> {{ this.MaxTemp}} </h2>
+            </div></div>  
+
+            <div class="d-flex align-items-center"> <h2 for="">Min Temp :</h2>
+              <div>
+                <h2> {{ this.MinTemp}} </h2>
+              </div></div>  
+
+              <div class="d-flex align-items-center"> <h2 for="">Humidity :</h2>
+                <div>
+                  <h2> {{ this.Humi}} </h2>
+                </div></div>  
+
+                <div class="d-flex align-items-center"> <h2 for="">Feels Like :</h2>
+                  <div>
+                    <h2> {{ this.Feellike}} </h2>
+                  </div></div>  
+
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
