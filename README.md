@@ -27,8 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-### used open weather api for weather.Here is the below api details. api key will work few hours isnce it is free one.
+### used open weather api for weather.Here is the below api details. 
+api key will work few hours since it is not paid one.
  weatherAPI = 'https://api.openweathermap.org/data/2.5/weather?q=';
-  weatherParams = '&units=metric&APPID=7a03c26542c239ef43a3257fc4b285d2';
+  weatherParams = '&units=metric&APPID=**7a03c26542c239ef43a3257fc4b285d2**';
   
   
